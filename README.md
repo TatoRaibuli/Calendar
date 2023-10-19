@@ -1,2 +1,2 @@
-# Calendar
+# Date Picker
 I Hate Javascript
