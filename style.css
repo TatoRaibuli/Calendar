@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    color: #d3eeff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1d27;
+}
+
+h1 {
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+#calendar {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 100px 400px 200px;
+    margin-top: 5rem;
+
+}
+
+
+.date-element {
+    padding: 0.5rem 1rem;
+    border: 2px black solid;
+    letter-spacing: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#month {
+    border-right: none;
+    border-left: none;
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+#day {
+    border-right: none;
+    border-left: none;
+    grid-row: 3;
+}
+
+#year {
+    border-right: none;
+    border-left: none;
+    grid-row: 3;
+}
+
+/*previews*/
+#month-preview-1 {
+    grid-column: 2;
+    grid-row: 1;
+    opacity: 30%;
+}
+
+#month-preview-2 {
+    grid-column: 2;
+    grid-row: 2;
+    opacity: 60%;
+}
+
+#month-preview-4 {
+    grid-column: 2;
+    grid-row: 4;
+    opacity: 60%;
+}
+
+#month-preview-5 {
+    grid-column: 2;
+    grid-row: 5;
+    opacity: 30%;
+}
+
+#day-preview-1 {
+    grid-row: 1;
+    opacity: 30%;
+}
+
+#day-preview-2 {
+    grid-row: 2;
+    opacity: 60%;
+}
+
+#day-preview-4 {
+    grid-row: 4;
+    opacity: 60%;
+}
+
+#day-preview-5 {
+    grid-row: 5;
+    opacity: 30%;
+}
+
+#year-preview-1 {
+    grid-row: 1;
+    opacity: 30%;
+}
+
+#year-preview-2 {
+    grid-row: 2;
+    opacity: 60%;
+}
+
+#year-preview-4 {
+    grid-row: 4;
+    opacity: 60%;
+}
+
+#year-preview-5 {
+    grid-row: 5;
+    opacity: 30%;
+}
+
+.preview-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.previous-preview {
+    position: absolute;
+}
+
+.text-span {
+    font-size: 3rem;
+}
+
+#fortune-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: #35363b;
+    color: wheat;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    transition: font-size 0.2s ease-out, color 0.2s ease-out, background-color 0.3s ease-out;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+#fortune-btn:hover {
+    background-color: #27282e;
+    font-size: 1.5rem;
+    color: #7bb67b;
+
+}
+
+#fortune {
+    color: #a83d59;
+    font-size: 1.5rem;
+}
+
